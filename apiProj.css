@@ -1,0 +1,93 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+.first {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background-image: url("https://timedotcom.files.wordpress.com/2018/04/national-beer-day-ipa.jpg");
+  background-position: center;
+  background-size: cover;
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}
+
+.box {
+  text-align: center;
+  position: relative;
+
+}
+.beerForm {
+  display: inline-block;
+
+}
+input {
+  position: relative;
+  z-index: 100;
+  border-radius: 15px;
+}
+input#searchBeer{
+  width: 300px;
+  height: 100px;
+  background: #2b303b;
+  border: none;
+  font-size: 15pt;
+  float: left;
+  color: #63717f;
+  padding-left: 45px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+input#searchBeer::-webkit-input-placeholder {
+  color: #65737e;
+}
+
+input[type="submit"] {
+  background: url(http://icons.iconarchive.com/icons/flat-icons.com/flat/96/Beer-icon.png) center center no-repeat;
+  border: none;
+  height: 100px;
+  width: 100px;
+  position: relative;
+  float: left;
+}
+
+
+input[type="submit"]:hover {}
+
+.second {
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 140, 0, 0.5);
+  filter: alpha(opacity=50);
+  opacity: 0;
+  transition: all 200ms;
+}
+
+h2 {
+  margin: 10px;
+}
+h3.name {
+  margin: 0;
+}
+ul.beerList {
+  margin-left: 140px;
+}
+li {
+  /* margin: 10px;
+  list-style-image: url(http://icons.iconarchive.com/icons/flat-icons.com/flat/96/Beer-icon.png);
+  border: 1px black;*/
+  margin: 10px 10px 30px 10px;
+  list-style: none;
+  position: relative;
+}
+li::after {
+  content: url(http://icons.iconarchive.com/icons/flat-icons.com/flat/96/Beer-icon.png);
+  position: absolute;
+  top: 5px;
+  left: -110px;
+}
